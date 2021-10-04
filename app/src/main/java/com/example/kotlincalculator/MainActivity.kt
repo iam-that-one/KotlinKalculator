@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
     var txt = ""
     var num1 = 0
     var num2 = 0
+    var sum = 0
+    var operation = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -64,21 +66,69 @@ class MainActivity : AppCompatActivity() {
 
             result.text = txt + get7().toString()
         }
+       btn9.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get9().toString()
+       }
        btn8.setOnClickListener{
             txt = result.text.toString()
            result.text = txt + get8().toString()
        }
+       btn6.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get6().toString()
+       }
+       btn5.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get5().toString()
+       }
+       btn4.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get4().toString()
+       }
+       btn3.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get3().toString()
+       }
+       btn2.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get2().toString()
+       }
+       btn1.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get1().toString()
+       }
+       btn0.setOnClickListener{
+           txt = result.text.toString()
+           result.text = txt + get0().toString()
+       }
        btnPlus.setOnClickListener{
+           operation = "+"
             txt = result.text.toString()
            num1 = txt.toInt()
+           result.text = ""
+       }
+       btnDiv.setOnClickListener{
+
+       }
+       btnMinus.setOnClickListener{
+           operation = "-"
+           var min = result.text.toString()
+               num1 = min.toInt()
            result.text = ""
        }
        btnEqual.setOnClickListener{
            txt = result.text.toString()
            num2 = txt.toInt()
-           if (getPlus() == "+"){
+           if (operation== "+"){
                var sum = num1 + num2
                result.text = sum.toString()
+           }else if (operation== "-"){
+               var numeStr = result.text.toString()
+               num2 = numeStr.toInt()
+               var sub = num1 - num2
+
+               result.text = sub.toString()
            }
        }
     }
@@ -88,8 +138,39 @@ class MainActivity : AppCompatActivity() {
     private fun get8(): Int{
         return 8
     }
+    private fun get9(): Int{
+        return 9
+    }
+    private fun get6(): Int{
+        return 6
+    }
+    private fun get5(): Int{
+        return 5
+    }
+    private fun get4(): Int{
+        return 4
+    }
+    private fun get3(): Int{
+        return 3
+    }
+    private fun get2(): Int{
+        return 2
+    }
+    private fun get1(): Int{
+        return 1
+    }
+    private fun get0(): Int{
+        return 0
+    }
+
     private fun getPlus(): String{
         return "+"
+    }
+    private fun getDiv(): String{
+        return "/"
+    }
+    private fun getMinus(): String{
+        return "-"
     }
     private fun equal(): String{
         return "="
