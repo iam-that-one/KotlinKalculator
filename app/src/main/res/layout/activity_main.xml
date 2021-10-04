@@ -73,7 +73,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:backgroundTint="@android:color/holo_green_dark"
+            android:backgroundTint="@android:color/black"
+            android:alpha="0.50"
             android:text="/" />
     </LinearLayout>
 
