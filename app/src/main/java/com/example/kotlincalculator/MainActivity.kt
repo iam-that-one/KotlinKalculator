@@ -117,6 +117,18 @@ class MainActivity : AppCompatActivity() {
                num1 = min.toInt()
            result.text = ""
        }
+       btnMult.setOnClickListener{
+           operation = "*"
+           var mult = result.text.toString()
+           num1 = mult.toInt()
+           result.text = ""
+       }
+       btnDiv.setOnClickListener{
+           operation = "/"
+           var div = result.text.toString()
+           num1 = div.toInt()
+           result.text = ""
+       }
        btnEqual.setOnClickListener{
            txt = result.text.toString()
            num2 = txt.toInt()
@@ -129,6 +141,17 @@ class MainActivity : AppCompatActivity() {
                var sub = num1 - num2
 
                result.text = sub.toString()
+           }else if (operation == "*"){
+               var numeStr = result.text.toString()
+               num2 = numeStr.toInt()
+               var mult = num1 * num2
+               result.text = mult.toString()
+           }
+           else{
+               var numeStr = result.text.toString()
+               num2 = numeStr.toInt()
+               var div = num1 / num2
+               result.text = div.toString()
            }
        }
     }
