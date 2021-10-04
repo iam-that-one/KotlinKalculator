@@ -132,7 +132,7 @@ class MainActivity : AppCompatActivity() {
        btnEqual.setOnClickListener{
            txt = result.text.toString()
            num2 = txt.toInt()
-           if (operation== "+"){
+           if (operation == "+"){
                var sum = num1 + num2
                result.text = sum.toString()
            }else if (operation== "-"){
@@ -153,6 +153,15 @@ class MainActivity : AppCompatActivity() {
                var div = num1 / num2
                result.text = div.toString()
            }
+       }
+       btnDel.setOnClickListener{
+           result.text = ""
+       }
+       btnC.setOnClickListener{
+           num1 = 0
+           num2 = 0
+           operation = ""
+           result.text = ""
        }
     }
    private fun get7(): Int{
@@ -186,16 +195,4 @@ class MainActivity : AppCompatActivity() {
         return 0
     }
 
-    private fun getPlus(): String{
-        return "+"
-    }
-    private fun getDiv(): String{
-        return "/"
-    }
-    private fun getMinus(): String{
-        return "-"
-    }
-    private fun equal(): String{
-        return "="
-    }
 }
