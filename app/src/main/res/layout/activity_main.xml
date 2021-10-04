@@ -125,7 +125,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:backgroundTint="@android:color/background_dark"
+            android:backgroundTint="@android:color/black"
+            android:alpha="0.50"
             android:text="*" />
     </LinearLayout>
 
@@ -177,7 +178,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:backgroundTint="@android:color/background_dark"
+            android:backgroundTint="@android:color/black"
+            android:alpha="0.50"
             android:text="-" />
     </LinearLayout>
 
@@ -199,7 +201,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:backgroundTint="@android:color/background_dark"
+            android:backgroundTint="@android:color/black"
+            android:alpha="0.50"
             android:text="+/-" />
 
         <Button
@@ -219,7 +222,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:backgroundTint="@android:color/background_dark"
+            android:backgroundTint="@android:color/black"
+            android:alpha="0.50"
 
             android:text="." />
 
@@ -230,7 +234,8 @@
             android:layout_weight="1"
             android:layout_marginLeft="2dp"
             android:layout_marginRight="2dp"
-            android:backgroundTint="@android:color/background_dark"
+            android:backgroundTint="@android:color/black"
+            android:alpha="0.50"
             android:text="+" />
     </LinearLayout>
 
@@ -259,7 +264,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
-                android:backgroundTint="@android:color/background_dark"
+                android:backgroundTint="@android:color/black"
+                android:alpha="0.50"
                 android:text="DEL" />
 
         </LinearLayout>
@@ -280,7 +286,8 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
-                android:backgroundTint="@android:color/background_dark"
+                android:backgroundTint="@android:color/black"
+                android:alpha="0.50"
                 android:text="C" />
 
         </LinearLayout>
