@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:text="0"
+        android:padding="16dp"
+        android:background="@color/design_default_color_secondary_variant"
+        android:textColor="@color/white"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llRow1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDisplay"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".15"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/onClick7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/onClick8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/onClick9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/onClickDiv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llRow2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llRow1"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/onClick4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/onClick5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/onClick6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/onClickMul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llRow3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llRow2"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/onClick1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/onClick2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/onClick3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/onClickMinus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/llRow4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/llRow3"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".15"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/onClickNeg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:text="+/-" />
+
+        <Button
+            android:id="@+id/onClick0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/holo_green_dark"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/onClickDote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/background_dark"
+
+            android:text="." />
+
+        <Button
+            android:id="@+id/onClickPlus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:backgroundTint="@android:color/background_dark"
+            android:text="+" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/llRow4"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent=".15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/llRow5a"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".25"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/onClickDelete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="@android:color/background_dark"
+                android:text="DEL" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/llRow5b"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/llRow5a"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".25"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/onClickClean"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="@android:color/background_dark"
+                android:text="C" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/llRow5c"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/llRow5b"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent=".5"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/onClickEqual"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:backgroundTint="@android:color/holo_orange_dark"
+                android:text="=" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
