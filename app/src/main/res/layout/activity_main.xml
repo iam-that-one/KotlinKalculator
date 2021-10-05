@@ -241,23 +241,24 @@
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/llRow4"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
         app:layout_constraintHeight_percent=".15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/llRow4">
 
         <LinearLayout
+            android:id="@+id/llRow5a"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/llRow5a"
-            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent=".25"
-            android:orientation="horizontal">
+            app:layout_constraintWidth_percent=".25">
 
             <Button
                 android:id="@+id/onClickDelete"
@@ -265,21 +266,21 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
-                android:backgroundTint="@android:color/black"
                 android:alpha="0.50"
+                android:backgroundTint="@android:color/black"
                 android:text="DEL" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/llRow5b"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/llRow5b"
-            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
             app:layout_constraintStart_toEndOf="@id/llRow5a"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent=".25"
-            android:orientation="horizontal">
+            app:layout_constraintWidth_percent=".25">
 
             <Button
                 android:id="@+id/onClickClean"
@@ -287,21 +288,21 @@
                 android:layout_height="match_parent"
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
-                android:backgroundTint="@android:color/black"
                 android:alpha="0.50"
+                android:backgroundTint="@android:color/black"
                 android:text="C" />
 
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/llRow5c"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/llRow5c"
-            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
             app:layout_constraintStart_toEndOf="@id/llRow5b"
+            app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintWidth_default="percent"
-            app:layout_constraintWidth_percent=".5"
-            android:orientation="horizontal">
+            app:layout_constraintWidth_percent=".5">
 
             <Button
                 android:id="@+id/onClickEqual"
@@ -314,5 +315,14 @@
 
         </LinearLayout>
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvTracker"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:hint="Tracker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 </androidx.constraintlayout.widget.ConstraintLayout>

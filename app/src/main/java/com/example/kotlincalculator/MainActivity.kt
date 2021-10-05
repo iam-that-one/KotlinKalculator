@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findIds()
-        onClibkBtns()
+        onClickButtons()
     }
   private fun findIds(){
         btn7 = findViewById(R.id.onClick7)
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         result = findViewById(R.id.tvResult)
 
     }
-   private fun onClibkBtns(){
+   private fun onClickButtons(){
         btn7.setOnClickListener{
             txt = result.text.toString()
 
@@ -108,9 +108,7 @@ class MainActivity : AppCompatActivity() {
            num1 = txt.toInt()
            result.text = ""
        }
-       btnDiv.setOnClickListener{
 
-       }
        btnMinus.setOnClickListener{
            operation = "-"
            var min = result.text.toString()
@@ -132,26 +130,30 @@ class MainActivity : AppCompatActivity() {
        btnEqual.setOnClickListener{
            txt = result.text.toString()
            num2 = txt.toInt()
-           if (operation == "+"){
-               var sum = num1 + num2
-               result.text = sum.toString()
-           }else if (operation== "-"){
-               var numeStr = result.text.toString()
-               num2 = numeStr.toInt()
-               var sub = num1 - num2
+           when (operation) {
+               "+" -> {
+                   var sum = num1 + num2
+                   result.text = sum.toString()
+               }
+               "-" -> {
+                   var numeStr = result.text.toString()
+                   num2 = numeStr.toInt()
+                   var sub = num1 - num2
 
-               result.text = sub.toString()
-           }else if (operation == "*"){
-               var numeStr = result.text.toString()
-               num2 = numeStr.toInt()
-               var mult = num1 * num2
-               result.text = mult.toString()
-           }
-           else{
-               var numeStr = result.text.toString()
-               num2 = numeStr.toInt()
-               var div = num1 / num2
-               result.text = div.toString()
+                   result.text = sub.toString()
+               }
+               "*" -> {
+                   var numeStr = result.text.toString()
+                   num2 = numeStr.toInt()
+                   var mult = num1 * num2
+                   result.text = mult.toString()
+               }
+               else -> {
+                   var numeStr = result.text.toString()
+                   num2 = numeStr.toInt()
+                   var div = num1 / num2
+                   result.text = div.toString()
+               }
            }
        }
        btnDel.setOnClickListener{
